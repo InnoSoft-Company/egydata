@@ -6,7 +6,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/egydata.svg)](https://pypi.org/project/egydata/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/egydata.svg)](https://pypi.org/project/egydata/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/InnoSoft-Company/egydata/blob/main/LICENSE)
-[![Downloads Today](https://img.shields.io/pypi/dt/egydata.svg)](https://pypi.org/project/egydata/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/egydata)](https://pypi.org/project/egydata/)
 [![Downloads Last Week](https://pepy.tech/badge/egydata/week)](https://pepy.tech/project/egydata)
 [![Downloads Last Month](https://pepy.tech/badge/egydata/month)](https://pepy.tech/project/egydata)
 [![Total Downloads](https://pepy.tech/badge/egydata)](https://pepy.tech/project/egydata)
@@ -15,27 +15,27 @@
 <!-- ==========================
      GitHub Badges
 ========================== -->
-[![GitHub stars](https://img.shields.io/github/stars/InnoSoft-Company/egydata.svg?style=social)](https://github.com/InnoSoft-Company/egydata)
-[![GitHub forks](https://img.shields.io/github/forks/InnoSoft-Company/egydata.svg?style=social)](https://github.com/InnoSoft-Company/egydata)
-[![GitHub issues](https://img.shields.io/github/issues/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/pulls)
-[![GitHub last commit](https://img.shields.io/github/last-commit/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/commits/main)
-[![GitHub contributors](https://img.shields.io/github/contributors/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/graphs/contributors)
-[![GitHub license](https://img.shields.io/github/license/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/InnoSoft-Company/egydata?style=social)](https://github.com/InnoSoft-Company/egydata)
+[![GitHub forks](https://img.shields.io/github/forks/InnoSoft-Company/egydata?style=social)](https://github.com/InnoSoft-Company/egydata)
+[![GitHub issues](https://img.shields.io/github/issues/InnoSoft-Company/egydata)](https://github.com/InnoSoft-Company/egydata/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/InnoSoft-Company/egydata)](https://github.com/InnoSoft-Company/egydata/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/InnoSoft-Company/egydata)](https://github.com/InnoSoft-Company/egydata/commits/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/InnoSoft-Company/egydata)](https://github.com/InnoSoft-Company/egydata/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/InnoSoft-Company/egydata)](https://github.com/InnoSoft-Company/egydata/blob/main/LICENSE)
 
 <!-- ==========================
      CI / Testing / Coverage
 ========================== -->
 [![Build Status](https://github.com/InnoSoft-Company/egydata/actions/workflows/python-package.yml/badge.svg)](https://github.com/InnoSoft-Company/egydata/actions)
-[![Coverage](https://img.shields.io/codecov/c/github/InnoSoft-Company/egydata/main.svg)](https://codecov.io/gh/InnoSoft-Company/egydata)
-[![Code Quality: Python](https://img.shields.io/lgtm/grade/python/g/InnoSoft-Company/egydata.svg)](https://lgtm.com/projects/g/InnoSoft-Company/egydata)
-[![Typing](https://img.shields.io/badge/typing-strict-brightgreen.svg)](https://github.com/InnoSoft-Company/egydata)
+[![Coverage](https://img.shields.io/codecov/c/github/InnoSoft-Company/egydata)](https://codecov.io/gh/InnoSoft-Company/egydata)
+[![Code Quality: Python](https://img.shields.io/lgtm/grade/python/g/InnoSoft-Company/egydata)](https://lgtm.com/projects/g/InnoSoft-Company/egydata)
+[![Typing](https://img.shields.io/badge/typing-strict-brightgreen)](https://github.com/InnoSoft-Company/egydata)
 
 <!-- ==========================
      Install / Social
 ========================== -->
-[![Install via pip](https://img.shields.io/badge/pip-install-blue.svg)](https://pypi.org/project/egydata/)
-[![Follow on GitHub](https://img.shields.io/badge/github-follow-blue.svg)](https://github.com/InnoSoft-Company/egydata)
+[![Install via pip](https://img.shields.io/badge/pip-install-blue)](https://pypi.org/project/egydata/)
+[![Follow on GitHub](https://img.shields.io/github/followers/InnoSoft-Company?style=social)](https://github.com/InnoSoft-Company)
 
 Structured Egyptian geographical and timezone data for Python.
 
