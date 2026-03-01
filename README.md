@@ -15,9 +15,9 @@
 ## 📊 Stats & Downloads
 | Badge Type | Markdown Code |
 | :--- | :--- |
-| **Total Downloads (Pepy)** | [![Total Downloads](https://pepy.tech/badge/egydata)](https://pepy.tech/project/egydata) |
-| **Monthly Downloads (Pepy)** | [![Monthly Downloads](https://pepy.tech/badge/egydata/month)](https://pepy.tech/project/egydata) |
-| **Weekly Downloads (Pepy)** | [![Weekly Downloads](https://pepy.tech/badge/egydata/week)](https://pepy.tech/project/egydata) |
+| **Total Downloads (Pepy)** | [![Total Downloads](https://static.pepy.tech/personalized-badge/egydata?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/egydata) |
+| **Monthly Downloads (Pepy)** | [![Monthly Downloads](https://static.pepy.tech/personalized-badge/egydata?period=monthly&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/project/egydata) |
+| **Weekly Downloads (Pepy)** | [![Weekly Downloads](https://static.pepy.tech/personalized-badge/egydata?period=weekly&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/project/egydata) |
 | **PyPI Downloads (Daily)** | [![PyPI Downloads](https://img.shields.io/pypi/dd/egydata)](https://pypi.org/project/egydata/) |
 | **PyPI Downloads (Weekly)** | [![PyPI Downloads](https://img.shields.io/pypi/dw/egydata)](https://pypi.org/project/egydata/) |
 | **PyPI Downloads (Monthly)** | [![PyPI Downloads](https://img.shields.io/pypi/dm/egydata)](https://pypi.org/project/egydata/) |
