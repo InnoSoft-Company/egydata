@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
   name="egydata",
-  version="1.0.1",
+  version="1.0.2",
   author="InnoSoft Company",                # ← change to your company
   author_email="midoghanam@hotmail.com",        # ← company email
   description="Python library for Egyptian data: cities, governorates, timezones, phone numbers, etc.",
