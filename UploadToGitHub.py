@@ -18,7 +18,7 @@ os.system(f'''
 git add . && \
 git commit -m "{datetime.now(pytz.timezone("Africa/Cairo")).strftime("%d-%m-%Y | %H:%M:%S")}{ f' | {q}' if q else '' }" && \
 git branch -M main && \
-git push https://github.com/mido-ghanam/{project}.git {branch} --force
+git push https://github.com/InnoSoft-Company/{project}.git {branch} --force
 ''')
 
 #git clone https://github.com/InnoSoft-Company/egydata

@@ -107,26 +107,26 @@ cities = [
   {"id": 89, "name": "أبو قرقاص", "nameEn": "Abu Qurqas", "governorateCode": "MNY"},
   # Asyut (AST)
   {"id": 90, "name": "أسيوط", "nameEn": "Asyut City", "governorateCode": "AST"},
-    {"id": 91, "name": "ديروط", "nameEn": "Dairut", "governorateCode": "AST"},
-    {"id": 92, "name": "القوصية", "nameEn": "El Qusiya", "governorateCode": "AST"},
-    {"id": 93, "name": "منفلوط", "nameEn": "Manfalut", "governorateCode": "AST"},
-    {"id": 94, "name": "أبنوب", "nameEn": "Abnoub", "governorateCode": "AST"},
-    # Sohag (SHG)
-    {"id": 95, "name": "سوهاج", "nameEn": "Sohag City", "governorateCode": "SHG"},
-    {"id": 96, "name": "أخميم", "nameEn": "Akhmim", "governorateCode": "SHG"},
-    {"id": 97, "name": "جرجا", "nameEn": "Girga", "governorateCode": "SHG"},
-    {"id": 98, "name": "طهطا", "nameEn": "Tahta", "governorateCode": "SHG"},
-    {"id": 99, "name": "المراغة", "nameEn": "El Maragha", "governorateCode": "SHG"},
-    # Qena (QNA)
-    {"id": 100, "name": "قنا", "nameEn": "Qena City", "governorateCode": "QNA"},
-    {"id": 101, "name": "نجع حمادي", "nameEn": "Nag Hammadi", "governorateCode": "QNA"},
-    {"id": 102, "name": "دشنا", "nameEn": "Dishna", "governorateCode": "QNA"},
-    {"id": 103, "name": "قوص", "nameEn": "Qus", "governorateCode": "QNA"},
-    # Luxor (LXR)
-    {"id": 104, "name": "الأقصر", "nameEn": "Luxor City", "governorateCode": "LXR"},
-    {"id": 105, "name": "إسنا", "nameEn": "Esna", "governorateCode": "LXR"},
-    {"id": 106, "name": "أرمنت", "nameEn": "Armant", "governorateCode": "LXR"},
-    {"id": 107, "name": "الطود", "nameEn": "El Tod", "governorateCode": "LXR"},
+  {"id": 91, "name": "ديروط", "nameEn": "Dairut", "governorateCode": "AST"},
+  {"id": 92, "name": "القوصية", "nameEn": "El Qusiya", "governorateCode": "AST"},
+  {"id": 93, "name": "منفلوط", "nameEn": "Manfalut", "governorateCode": "AST"},
+  {"id": 94, "name": "أبنوب", "nameEn": "Abnoub", "governorateCode": "AST"},
+  # Sohag (SHG)
+  {"id": 95, "name": "سوهاج", "nameEn": "Sohag City", "governorateCode": "SHG"},
+  {"id": 96, "name": "أخميم", "nameEn": "Akhmim", "governorateCode": "SHG"},
+  {"id": 97, "name": "جرجا", "nameEn": "Girga", "governorateCode": "SHG"},
+  {"id": 98, "name": "طهطا", "nameEn": "Tahta", "governorateCode": "SHG"},
+  {"id": 99, "name": "المراغة", "nameEn": "El Maragha", "governorateCode": "SHG"},
+  # Qena (QNA)
+  {"id": 100, "name": "قنا", "nameEn": "Qena City", "governorateCode": "QNA"},
+  {"id": 101, "name": "نجع حمادي", "nameEn": "Nag Hammadi", "governorateCode": "QNA"},
+  {"id": 102, "name": "دشنا", "nameEn": "Dishna", "governorateCode": "QNA"},
+  {"id": 103, "name": "قوص", "nameEn": "Qus", "governorateCode": "QNA"},
+  # Luxor (LXR)
+  {"id": 104, "name": "الأقصر", "nameEn": "Luxor City", "governorateCode": "LXR"},
+  {"id": 105, "name": "إسنا", "nameEn": "Esna", "governorateCode": "LXR"},
+  {"id": 106, "name": "أرمنت", "nameEn": "Armant", "governorateCode": "LXR"},
+  {"id": 107, "name": "الطود", "nameEn": "El Tod", "governorateCode": "LXR"},
     # Aswan (ASN)
     {"id": 108, "name": "أسوان", "nameEn": "Aswan City", "governorateCode": "ASN"},
     {"id": 109, "name": "كوم أمبو", "nameEn": "Kom Ombo", "governorateCode": "ASN"},
