@@ -1,4 +1,3 @@
-```markdown
 # Egydata
 
 [![PyPI Version](https://img.shields.io/pypi/v/egydata.svg)](https://pypi.org/project/egydata/)
