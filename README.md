@@ -1,8 +1,41 @@
 # Egydata
 
+<!-- ==========================
+     PyPI Badges
+========================== -->
 [![PyPI Version](https://img.shields.io/pypi/v/egydata.svg)](https://pypi.org/project/egydata/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/egydata.svg)](https://pypi.org/project/egydata/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/InnoSoft-Company/egydata/blob/main/LICENSE)
+[![Downloads Today](https://img.shields.io/pypi/dt/egydata.svg)](https://pypi.org/project/egydata/)
+[![Downloads Last Week](https://pepy.tech/badge/egydata/week)](https://pepy.tech/project/egydata)
+[![Downloads Last Month](https://pepy.tech/badge/egydata/month)](https://pepy.tech/project/egydata)
+[![Total Downloads](https://pepy.tech/badge/egydata)](https://pepy.tech/project/egydata)
+[![PyPI Status](https://img.shields.io/pypi/status/egydata.svg)](https://pypi.org/project/egydata/)
+
+<!-- ==========================
+     GitHub Badges
+========================== -->
+[![GitHub stars](https://img.shields.io/github/stars/InnoSoft-Company/egydata.svg?style=social)](https://github.com/InnoSoft-Company/egydata)
+[![GitHub forks](https://img.shields.io/github/forks/InnoSoft-Company/egydata.svg?style=social)](https://github.com/InnoSoft-Company/egydata)
+[![GitHub issues](https://img.shields.io/github/issues/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/commits/main)
+[![GitHub contributors](https://img.shields.io/github/contributors/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/InnoSoft-Company/egydata.svg)](https://github.com/InnoSoft-Company/egydata/blob/main/LICENSE)
+
+<!-- ==========================
+     CI / Testing / Coverage
+========================== -->
+[![Build Status](https://github.com/InnoSoft-Company/egydata/actions/workflows/python-package.yml/badge.svg)](https://github.com/InnoSoft-Company/egydata/actions)
+[![Coverage](https://img.shields.io/codecov/c/github/InnoSoft-Company/egydata/main.svg)](https://codecov.io/gh/InnoSoft-Company/egydata)
+[![Code Quality: Python](https://img.shields.io/lgtm/grade/python/g/InnoSoft-Company/egydata.svg)](https://lgtm.com/projects/g/InnoSoft-Company/egydata)
+[![Typing](https://img.shields.io/badge/typing-strict-brightgreen.svg)](https://github.com/InnoSoft-Company/egydata)
+
+<!-- ==========================
+     Install / Social
+========================== -->
+[![Install via pip](https://img.shields.io/badge/pip-install-blue.svg)](https://pypi.org/project/egydata/)
+[![Follow on GitHub](https://img.shields.io/badge/github-follow-blue.svg)](https://github.com/InnoSoft-Company/egydata)
 
 Structured Egyptian geographical and timezone data for Python.
 
@@ -21,7 +54,7 @@ pip install egydata
 Quick Start
 
 ```python
-from egydata import governorates, cities, phoneArea, timezone
+from egydata import governorates, cities, phoneAreas, timezones
 
 # Get all governorates
 all_govs = governorates.get_all()
@@ -30,7 +63,7 @@ all_govs = governorates.get_all()
 maadi = cities.search("Maadi")
 
 # Check current time in Egypt
-now = timezone.now()
+now = timezones.now()
 ```
 
 ---
@@ -83,52 +116,84 @@ found = cities.search("Maadi")
 Phone Area Codes
 
 ```python
-from egydata import phoneArea
+from egydata import phoneAreas
 
 # Get all area codes (landline and mobile)
-all_codes = phoneArea.get_all()
+all_codes = phoneAreas.get_all()
 # [{'code': '010', 'region': 'ڤودافون', 'regionEn': 'Vodafone'}, ...]
 
 # Look up region by code
-region = phoneArea.get_region("03")
+region = phoneAreas.get_region("03")
 # {'code': '03', 'region': 'الإسكندرية', 'regionEn': 'Alexandria'}
 
 # Find area code by region name (Arabic or English)
-entry = phoneArea.get_code("Mansoura")
+entry = phoneAreas.get_code("Mansoura")
 # {'code': '050', 'region': 'الدقهلية (المنصورة)', 'regionEn': 'Dakahlia (Mansoura)'}
 ```
 
 Timezone
 
 ```python
-from egydata import timezone
+from egydata import timezones
 
-print(timezone.name)      # 'Africa/Cairo'
-print(timezone.offset)    # '+02:00' (standard time offset)
+print(timezones.name)      # 'Africa/Cairo'
+print(timezones.offset)    # '+02:00' (standard time offset)
 
-now = timezone.now()      # current date/time in Egypt (timezone-aware datetime)
+now = timezones.now()      # current date/time in Egypt (timezone-aware datetime)
 print(now.isoformat())
 
 # Check if daylight saving time is active (Egypt resumed DST in 2023)
-is_dst = timezone.isDST() # returns True if current offset is +03:00
+is_dst = timezones.isDST() # returns True if current offset is +03:00
 
 # Optionally check a specific date
 from datetime import datetime
 date = datetime(2024, 8, 1)
-print(timezone.isDST(date))  # True (during DST period)
+print(timezones.isDST(date))  # True (during DST period)
 ```
 
 ---
+
 
 API Reference
 
 governorates
 
-Method Parameters Returns Description
-get_all() – list[Governorate] Returns all 27 Egyptian governorates.
-get_by_code(code) code: str Governorate \| None Find governorate by its code (e.g., 'CAI').
-get_by_id(id) id: int/str Governorate \| None Find governorate by its numeric ID.
-search(query) query: str list[Governorate] Search by Arabic/English name or code (case‑insensitive, partial).
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Parameters</th>
+      <th>Returns</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>get_all()</td>
+      <td>–</td>
+      <td>list&lt;Governorate&gt;</td>
+      <td>Returns all 27 Egyptian governorates.</td>
+    </tr>
+    <tr>
+      <td>get_by_code(code)</td>
+      <td>code: str</td>
+      <td>Governorate | None</td>
+      <td>Find governorate by its code (e.g., 'CAI').</td>
+    </tr>
+    <tr>
+      <td>get_by_id(id)</td>
+      <td>id: int/str</td>
+      <td>Governorate | None</td>
+      <td>Find governorate by its numeric ID.</td>
+    </tr>
+    <tr>
+      <td>search(query)</td>
+      <td>query: str</td>
+      <td>list&lt;Governorate&gt;</td>
+      <td>Search by Arabic/English name or code (case‑insensitive, partial).</td>
+    </tr>
+  </tbody>
+</table>
 
 Governorate shape:
 {'id': int, 'code': str, 'name': str, 'nameEn': str}
@@ -137,10 +202,36 @@ Governorate shape:
 
 cities
 
-Method Parameters Returns Description
-get_by_governorate(gov_code) gov_code: str list[City] Get all cities in a governorate (by its code).
-get_by_id(id) id: int/str City \| None Find city by its numeric ID.
-search(query) query: str list[City] Search by Arabic or English name (partial, case‑insensitive).
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Parameters</th>
+      <th>Returns</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>get_by_governorate(gov_code)</td>
+      <td>gov_code: str</td>
+      <td>list&lt;City&gt;</td>
+      <td>Get all cities in a governorate (by its code).</td>
+    </tr>
+    <tr>
+      <td>get_by_id(id)</td>
+      <td>id: int/str</td>
+      <td>City | None</td>
+      <td>Find city by its numeric ID.</td>
+    </tr>
+    <tr>
+      <td>search(query)</td>
+      <td>query: str</td>
+      <td>list&lt;City&gt;</td>
+      <td>Search by Arabic or English name (partial, case‑insensitive).</td>
+    </tr>
+  </tbody>
+</table>
 
 City shape:
 {'id': int, 'name': str, 'nameEn': str, 'governorateCode': str}
@@ -149,10 +240,36 @@ City shape:
 
 phoneArea
 
-Method Parameters Returns Description
-get_all() – list[AreaCode] Returns all landline and mobile area codes.
-get_region(code) code: str AreaCode \| None Look up region info by area code.
-get_code(region_name) region_name: str AreaCode \| None Find area code entry by region name (Arabic or English).
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Parameters</th>
+      <th>Returns</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>get_all()</td>
+      <td>–</td>
+      <td>list&lt;AreaCode&gt;</td>
+      <td>Returns all landline and mobile area codes.</td>
+    </tr>
+    <tr>
+      <td>get_region(code)</td>
+      <td>code: str</td>
+      <td>AreaCode | None</td>
+      <td>Look up region info by area code.</td>
+    </tr>
+    <tr>
+      <td>get_code(region_name)</td>
+      <td>region_name: str</td>
+      <td>AreaCode | None</td>
+      <td>Find area code entry by region name (Arabic or English).</td>
+    </tr>
+  </tbody>
+</table>
 
 AreaCode shape:
 {'code': str, 'region': str, 'regionEn': str}
@@ -161,11 +278,37 @@ AreaCode shape:
 
 timezone
 
-Property / Method Returns Description
-name 'Africa/Cairo' IANA timezone identifier.
-offset '+02:00' Standard UTC offset (without DST).
-now() datetime Current date and time in Egypt (timezone‑aware).
-isDST(date=None) bool Whether DST is active (for given date or now).
+<table>
+  <thead>
+    <tr>
+      <th>Property / Method</th>
+      <th>Returns</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>'Africa/Cairo'</td>
+      <td>IANA timezone identifier.</td>
+    </tr>
+    <tr>
+      <td>offset</td>
+      <td>'+02:00'</td>
+      <td>Standard UTC offset (without DST).</td>
+    </tr>
+    <tr>
+      <td>now()</td>
+      <td>datetime</td>
+      <td>Current date and time in Egypt (timezone‑aware).</td>
+    </tr>
+    <tr>
+      <td>isDST(date=None)</td>
+      <td>bool</td>
+      <td>Whether DST is active (for given date or now).</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -188,6 +331,6 @@ Requirements
 
 License
 
-MIT
+MIT - InnoSoft Company
 
 ```
